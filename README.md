@@ -9,7 +9,7 @@ Make both scripts executable:
 
 > chmod +x install.sh
 
-> chomd +x run.sh
+> chmod +x run.sh
 
 Then install the core:
 
