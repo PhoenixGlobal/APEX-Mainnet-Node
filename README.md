@@ -6,11 +6,15 @@ Ubuntu
 
 # How-to
 Make both scripts executable:
+
 > chmod +x install.sh
+
 > chomd +x run.sh
 
 Then install the core:
+
 > ./install.sh
 
 Then run the core:
+
 > ./run.sh
