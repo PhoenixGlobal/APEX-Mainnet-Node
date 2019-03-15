@@ -15,9 +15,9 @@ rm gradle-4.10.2-bin.zip
 echo "Clone APEX Core"
 git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
 cd APEX-Blockchain-Core
-git checkout v0.9.0
+git checkout v0.9.1
 echo "Build Core"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
-cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-1.0-SNAPSHOT.jar apex-blockchain-core.jar
+cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchain-core.jar
 mkdir test_net
