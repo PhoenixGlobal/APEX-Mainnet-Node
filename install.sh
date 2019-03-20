@@ -3,6 +3,7 @@ echo "Install Git"
 sudo apt-get install git -y
 echo "Add java repo"
 sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get install unzip
 sudo apt-get update
 echo "Install java"
 sudo apt install oracle-java8-installer -y
