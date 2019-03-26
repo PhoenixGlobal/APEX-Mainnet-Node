@@ -1,5 +1,5 @@
 # APEX-Testnet-Node
-Non validator node setup script for the community testnet
+(Non) validator node setup script for the community testnet
 
 # OPS
 Ubuntu
@@ -13,16 +13,20 @@ change dir:
 
 > cd APEX-Testnet-Node 
 
-Make both scripts executable:
+Make all scripts executable:
 
 > chmod +x install.sh
 
 > chmod +x run.sh
 
+> chmod +x client.sh
+
 Then install the core and configure the settings:
 
 > sh install.sh -h "your-public-ip" -k (optional) "your-producer-key"
 
-Then run the core:
+Then run the core first then the client:
 
 > sh run.sh
+
+> sh client.sh
