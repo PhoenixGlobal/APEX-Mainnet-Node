@@ -49,6 +49,7 @@ cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchai
 mkdir test_net
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
+git checkout v0.9.1
 mkdir APEX-Blockchain-CLI/libs
 cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
 cd APEX-Blockchain-CLI
