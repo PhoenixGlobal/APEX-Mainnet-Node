@@ -35,9 +35,9 @@ sudo apt install oracle-java8-installer -y
 echo "Get gradle binary"
 wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
 echo "Install gradle"
-rm -r ~/gradle
+sudo rm -r ~/gradle
 unzip -d ~/gradle gradle-4.10.2-bin.zip
-rm gradle-4.10.2-bin.zip
+sudo rm gradle-4.10.2-bin.zip
 echo "Clone APEX Core"
 git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
 cd APEX-Blockchain-Core
