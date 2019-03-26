@@ -25,7 +25,7 @@ Then install the core and configure the settings:
 
 > sh install.sh -h "your-public-ip" -k (optional) "your-producer-key"
 
-Then run the core first then the client:
+Then run the core first (optional) afterwards the client:
 
 > sh run.sh
 
