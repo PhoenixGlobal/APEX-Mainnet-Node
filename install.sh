@@ -49,8 +49,10 @@ cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchai
 mkdir test_net
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
-git checkout dae22d5a02aa5340e17ab54509ba5af891324809
-mkdir APEX-Blockchain-CLI/libs
+cd APEX-Blockchain-CLI
+git checkout v0.9.1
+mkdir libs
+cd ..
 cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
 cd APEX-Blockchain-CLI
 ~/gradle/gradle-4.10.2/bin/gradle release
