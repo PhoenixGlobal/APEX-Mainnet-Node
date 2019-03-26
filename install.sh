@@ -55,7 +55,7 @@ mkdir libs
 cd ..
 cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
 cd APEX-Blockchain-CLI
-~/gradle/gradle-4.10.2/bin/gradle release -x test
+~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
 cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-1.0-SNAPSHOT.jar apex-blockchain-cli.jar
 
