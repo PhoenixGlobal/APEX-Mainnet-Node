@@ -1,4 +1,29 @@
 #!/bin/bash
+
+helpFunction()
+{
+   echo ""
+   echo "Usage: $0 -h host-ip -k private-key"
+   echo -h "\tYour public static external ip to bind to"
+   echo -k "\tIf you run a producer node you can pass your private key here"
+   exit 1
+}
+
+while getopts "h:k:" opt
+do
+   case "$opt" in
+      h ) hostIp="$OPTARG" ;;
+      k ) privKey="$OPTARG" ;;
+      ? ) helpFunction ;;
+   esac
+done
+
+if [ -z "$hostIp" ]
+then
+   echo "You have to pass at least your external IP";
+   helpFunction
+fi
+
 echo "Install Git"
 sudo apt-get install git -y
 echo "Add java repo"
@@ -22,3 +47,12 @@ echo "Build Core"
 cd ..
 cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchain-core.jar
 mkdir test_net
+
+sed -i 's/your-public-static-ip/'$hostIp'/g' settings.conf
+
+if [ -z "$privKey" ]
+then
+   sed -i 's/your-producer-key/ /g' settings.conf
+else
+   sed -i 's/your-producer-key/'$privKey'/g' settings.conf
+fi
