@@ -50,7 +50,7 @@ mkdir test_net
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
 cd APEX-Blockchain-CLI
-git checkout v0.9.1
+git checkout 397ee8a7f69343b4105334c511174f0560e177e1
 mkdir libs
 cd ..
 cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
