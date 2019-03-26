@@ -57,7 +57,7 @@ cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.
 cd APEX-Blockchain-CLI
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
-cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-1.0-SNAPSHOT.jar apex-blockchain-cli.jar
+cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.1.jar apex-blockchain-cli.jar
 
 sed -i 's/your-public-static-ip/'$hostIp'/g' settings.conf
 if [ -z "$privKey" ]
