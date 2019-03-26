@@ -19,10 +19,10 @@ Make both scripts executable:
 
 > chmod +x run.sh
 
-Then install the core:
+Then install the core and configure the settings:
 
-> ./install.sh
+> sh install.sh -h "your-public-ip" -k (optional) "your-producer-key"
 
 Then run the core:
 
-> ./run.sh
+> sh run.sh
