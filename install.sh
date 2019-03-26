@@ -47,9 +47,16 @@ echo "Build Core"
 cd ..
 cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchain-core.jar
 mkdir test_net
+echo "Clone APEX Client"
+git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
+mkdir APEX-Blockchain-CLI/libs
+cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
+cd APEX-Blockchain-CLI
+~/gradle/gradle-4.10.2/bin/gradle release
+cd ..
+cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.1.jar apex-blockchain-cli.jar
 
 sed -i 's/your-public-static-ip/'$hostIp'/g' settings.conf
-
 if [ -z "$privKey" ]
 then
    sed -i 's/your-producer-key/ /g' settings.conf
