@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar -Xms5G -Xmx8G -Xmn6G apex-blockchain-core.jar settings.conf
+java -jar -Xms2G -Xmx6G -Xmn4G apex-blockchain-core.jar settings.conf
