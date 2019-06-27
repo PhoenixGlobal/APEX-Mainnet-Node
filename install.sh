@@ -27,11 +27,13 @@ fi
 echo "Install Git"
 sudo apt-get install git -y
 echo "Add java repo"
-sudo add-apt-repository ppa:webupd8team/java -y
-sudo apt-get install unzip
+apt-get install -y software-properties-common
+wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 sudo apt-get update
+sudo apt-get install unzip
 echo "Install java"
-sudo apt install oracle-java8-installer -y
+apt-get install adoptopenjdk-12-hotspot
 echo "Get gradle binary"
 wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
 echo "Install gradle"
