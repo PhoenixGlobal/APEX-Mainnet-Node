@@ -33,7 +33,7 @@ sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 sudo apt-get update
 sudo apt-get install unzip
 echo "Install java"
-apt-get install adoptopenjdk-12-hotspot
+sudo apt-get install adoptopenjdk-12-hotspot
 echo "Get gradle binary"
 wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
 echo "Install gradle"
