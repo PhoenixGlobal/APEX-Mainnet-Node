@@ -6,11 +6,12 @@ Ubuntu 18.04 LTS
 
 ### 1. Clone the repo
 ```console
-git clone https://github.com/yuomii/APEX-Testnet-Node.git
+git clone https://github.com/yuomii/APEX-Mainnet-Node.git
 ```
+
 ### 2. Change directory
 ```console
-cd APEX-Testnet-Node 
+cd APEX-Mainnet-Node
 ```
 
 ### 3. Make all provided scripts executable
@@ -29,6 +30,7 @@ chmod +x client.sh
 ```console
 chmod +x firewall.sh
 ```
+
 ### 4. Then install the core and the client application
 ```console
 sh install.sh
