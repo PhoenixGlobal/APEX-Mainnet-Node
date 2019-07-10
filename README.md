@@ -1,5 +1,6 @@
 # APEX-Mainnet-Node
-Producer node setup script for the APEX Mainnet
+
+![alt-text](https://miro.medium.com/max/700/1*vOakjXvG44Kgsou8E9zRQw.png)
 
 ### Operating System
 Ubuntu 18.04 LTS
