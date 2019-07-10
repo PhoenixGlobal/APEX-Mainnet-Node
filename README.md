@@ -86,7 +86,7 @@ sh client.sh
 sh firewall.sh
 ```
 
-### Relevant Information
+# Relevant Information
 If you did generate your miner key over the tracker you will need to convert it from WIF-Format to RAW
 * WIF looks like that:
 > KxP3w2eTciGTGhNj4FtHvaKD1TVUS4P2pSTLrQx2BLTkzjekFKkp
