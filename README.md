@@ -14,17 +14,13 @@ Ubuntu 18.04 LTS
 > cd APEX-Testnet-Node 
 
 #### 3. Make all provided scripts executable
-
-> chmod +x install.sh
-
-> chmod +x configure.sh
-
-> chmod +x run.sh
-
-> chmod +x client.sh
-
-> chmod +x firewall.sh
-
+```console
+ chmod +x install.sh
+ chmod +x configure.sh
+ chmod +x run.sh
+ chmod +x client.sh
+ chmod +x firewall.sh
+```
 #### 4. Then install the core and the client application
 > sh install.sh
 
