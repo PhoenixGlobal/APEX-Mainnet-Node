@@ -15,19 +15,19 @@ cd APEX-Testnet-Node
 
 ### 3. Make all provided scripts executable
 ```console
- chmod +x install.sh
- ```
- ```console
- chmod +x configure.sh
- ```
- ```console
- chmod +x run.sh
- ```
- ```console
- chmod +x client.sh
- ```
- ```console
- chmod +x firewall.sh
+chmod +x install.sh
+```
+```console
+chmod +x configure.sh
+```
+```console
+chmod +x run.sh
+```
+```console
+chmod +x client.sh
+```
+```console
+chmod +x firewall.sh
 ```
 ### 4. Then install the core and the client application
 ```console
@@ -84,4 +84,18 @@ sh client.sh
 #### 8. Enable the firewall
 ```console
 sh firewall.sh
+```
+
+### Relevant Information
+If you did generate your miner key over the tracker you will need to convert it from WIF-Format to RAW
+*WIF looks like that:
+>KxP3w2eTciGTGhNj4FtHvaKD1TVUS4P2pSTLrQx2BLTkzjekFKkp
+
+*Raw looks like that:
+>7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86
+
+Therefore you need to run the client application which can convert your key for you.
+After you started the client enter this command for conversion:
+```console
+chain key -input "your-priv-key"
 ```
