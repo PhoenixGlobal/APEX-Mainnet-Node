@@ -31,25 +31,25 @@ Ubuntu 18.04 LTS
 #### 5. Configure your settings for the Mainnet
 #### You must provide the following parameters for a successfull setup
 * (-h) Your public server IP 
-*Example: -h 81.92.144.2*
+> -h 81.92.144.2
 
 * (-k) Your miner private key in RAW Format
-*Example: -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86*
+> -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86*
 
 * (-t) The timestamp for the genesis block
-*Example: -t 2019-05-18T09:05:00Z*
+> -t 2019-05-18T09:05:00Z*
 
 * (-p1) IP of your first peer node to connect to
-*Example: -p1 71.111.91.7*
+> -p1 71.111.91.7*
 
 * (-p2) IP of your second peer node to connect to
-*Example: -p1 72.121.61.1*
+> -p1 72.121.61.1*
 
 * (-p3) IP of your third peer node to connect to
-*Example: -p1 66.92.41.11*
+> -p1 66.92.41.11*
 
 * (-n) The name of your node
-*Example: -n MyFancyNode*
+> -n MyFancyNode*
 
 > sh configure.sh -h <your-public-ip> -k <your-producer-key> -t <timestamp> 
   -p1 <peer-ip-1> -p2 <peer-ip-2> -p3 <peer-ip-3> -n <your-node-name>
