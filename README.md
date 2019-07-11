@@ -1,6 +1,6 @@
 # APEX-Mainnet-Node
 
-![alt-text](https://miro.medium.com/max/700/1*vOakjXvG44Kgsou8E9zRQw.png)
+![alt-text](https://miro.medium.com/max/700/1*ISLOhsfWNQ6zMRg-vvSX0g.png)
 
 ### Operating System
 Ubuntu 18.04 LTS
