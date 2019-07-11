@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar -Xms512m -Xmx8G -XX:+UnlockExperimentalVMOptions -XX:+UseShenandoahGC apex-blockchain-core.jar settings.conf
+java -jar -Xms512m -Xmx10G -XX:+UnlockExperimentalVMOptions -XX:+UseZGC apex-blockchain-core.jar settings.conf
