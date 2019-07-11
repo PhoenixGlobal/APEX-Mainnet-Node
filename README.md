@@ -91,7 +91,7 @@ sh client.sh
 
 #### 8. Enable the firewall
 ```console
-sh firewall.sh
+sudo sh firewall.sh
 ```
 
 # Relevant Information
