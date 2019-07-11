@@ -57,11 +57,11 @@ sudo sh install.sh
 ```
 * (-p2) IP of your second peer node to connect to
 ```console
--p1 72.121.61.1
+-p2 72.121.61.1
 ```
 * (-p3) IP of your third peer node to connect to
 ```console
--p1 66.92.41.11
+-p3 66.92.41.11
 ```
 * (-n) The name of your node
 ```console
