@@ -14,7 +14,7 @@ helpFunction()
    exit 1
 }
 
-while getopts "h:k:t:p1:p2:p3:n" opt
+while getopts "h:k:t:p1:p2:p3:n:" opt
 do
    case "$opt" in
       h ) hostIp="$OPTARG" ;;
