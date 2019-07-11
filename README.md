@@ -1,5 +1,3 @@
-# APEX-Mainnet-Node
-
 ![alt-text](https://miro.medium.com/max/700/1*ISLOhsfWNQ6zMRg-vvSX0g.png)
 
 ### Operating System
