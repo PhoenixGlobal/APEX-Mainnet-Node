@@ -34,7 +34,7 @@ chmod +x firewall.sh
 
 ### 4. Then install the core and the client application
 ```console
-sh install.sh
+sudo sh install.sh
 ```
 
 ### 5. Configure your settings for the Mainnet
