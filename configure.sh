@@ -3,26 +3,27 @@
 helpFunction()
 {
    echo ""
-   echo "Usage: $0 -h <your-host-ip> -k <your-private-key> -t <timestamp> -p1 <PeerIP1> -p2<PeerIP2> -p3<PeerIP3> -n<NodeName>"
+   echo "Usage: $0 -h <your-host-ip> -k <your-private-key> -t <timestamp> -a <PeerIP1> -b <PeerIP2> -c <PeerIP3> -n <NodeName>"
    echo -h "\tYour public static external ip to bind to"
    echo -k "\tYour miner private key in RAW format"
    echo -t "\tThe timestamp of the genesis block"
-   echo -p1 "IP of your first peer"
-   echo -p2 "IP of your second peer"
-   echo -p3 "IP of your third peer"
+   echo -a "IP of your first peer"
+   echo -b "IP of your second peer"
+   echo -c "IP of your third peer"
    echo -n "Your Node Name"
+   echo ""
    exit 1
 }
 
-while getopts "h:k:t:p1:p2:p3:n:" opt
+while getopts "h:k:t:a:b:c:n:" opt
 do
    case "$opt" in
       h ) hostIp="$OPTARG" ;;
       k ) privKey="$OPTARG" ;;
       t ) timeStamp="$OPTARG" ;;
-      p1 ) peer1="$OPTARG" ;;
-      p2 ) peer2="$OPTARG" ;;
-      p3 ) peer3="$OPTARG" ;;
+      a ) peer1="$OPTARG" ;;
+      b ) peer2="$OPTARG" ;;
+      c ) peer3="$OPTARG" ;;
       n ) name="$OPTARG" ;;
       ? ) helpFunction ;;
    esac
