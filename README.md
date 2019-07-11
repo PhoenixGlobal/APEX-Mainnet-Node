@@ -39,38 +39,43 @@ sudo sh install.sh
 
 ### 5. Configure your settings for the Mainnet
 #### You must provide the following parameters for a successfull setup
-* (-h) Your public server IP 
+* -h Your public server IP 
 ```console
  -h 81.92.144.2
  ```
-* (-k) Your miner private key in RAW Format
+* -k Your miner private key in RAW Format
 ```console
 -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86
 ```
-* (-t) The timestamp for the genesis block
+* -t The timestamp for the genesis block
 ```console
 -t 2019-05-18T09:05:00Z
 ```
-* (-p1) IP of your first peer node to connect to
+* -a IP of your first peer node to connect to
 ```console
--p1 71.111.91.7
+-a 71.111.91.7
 ```
-* (-p2) IP of your second peer node to connect to
+* -b IP of your second peer node to connect to
 ```console
--p2 72.121.61.1
+-b 72.121.61.1
 ```
-* (-p3) IP of your third peer node to connect to
+* -c IP of your third peer node to connect to
 ```console
--p3 66.92.41.11
+-c 66.92.41.11
 ```
-* (-n) The name of your node
+* -n The name of your node
 ```console
 -n MyFancyNode
 ```
 **Run the script**
 ```console
 sh configure.sh -h "your-public-ip" -k "your-producer-key" -t "timestamp" 
--p1 "peer-ip-1" -p2 "peer-ip-2" -p3 "peer-ip-3" -n "your-node-name"
+-a "peer-ip-1" -b "peer-ip-2" -c "peer-ip-3" -n "your-node-name"
+```
+**Using the example values above it would be**
+```console
+sh configure.sh -h 81.92.144.2 -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86 
+-t 2019-05-18T09:05:00Z -a 71.111.91.7 -b 72.121.61.1 -c 66.92.41.11 -n MyFancyNode
 ```
 
 #### 6. Run the Core (Supernode)
