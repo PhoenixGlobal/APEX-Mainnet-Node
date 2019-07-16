@@ -17,7 +17,7 @@ sudo rm gradle-4.10.2-bin.zip
 echo "Clone APEX Core"
 git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
 cd APEX-Blockchain-Core
-git checkout testnet1
+git checkout mainnet
 git pull
 echo "Build Core"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
