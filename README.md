@@ -122,3 +122,7 @@ If the registration broadcast was successfull you will be able to vote for your 
 
 ### 4. Running core and client parallel
 In order to run multiple applications or keep one application running after exiting the SSH session you need a program that enables you to have multiple terminal instances on your machine. Screen is a good starting point:  **[Screen Tutorial](https://linuxize.com/post/how-to-use-linux-screen)**
+
+### 5. Securing your server
+If you are a newbie you should probably learn how to keep your server secure. 
+This is a good starting point: **[Securing your Server](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps)**
