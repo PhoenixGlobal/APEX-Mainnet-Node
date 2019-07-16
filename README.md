@@ -78,26 +78,27 @@ sh configure.sh -h 81.92.144.2 -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e
 -t 2019-05-18T09:05:00Z -a 71.111.91.7 -b 72.121.61.1 -c 66.92.41.11 -n MyFancyNode
 ```
 
-#### 6. Run the Core (Supernode)
+### 6. Run the core (Supernode)
 ```console
 sh run.sh
 ```
 
-#### 7. Run the Client (Wallet)
+### 7. Run the client (Wallet)
 ```console
 sh client.sh
 ```
 
-#### 8. Enable the firewall
+### 8. Enable the firewall
 ```console
 sudo sh firewall.sh
 ```
 
 # Relevant Information
 
+### 1. Client command documentation
 **For client command documentation take a look at [Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)**
 
-
+### 2. Conversion of private keys
 If you did generate your miner key over the tracker you will need to convert it from WIF-Format to RAW
 * WIF looks like that:
 > KxP3w2eTciGTGhNj4FtHvaKD1TVUS4P2pSTLrQx2BLTkzjekFKkp
@@ -112,4 +113,9 @@ After you started the client enter this command for conversion:
 chain key -input "your-priv-key"
 ```
 
+### 3. Register your producer node
+After you are in sync with the chain you can start with block production. Therefore you must register your node in the network.
 
+The registration can be done with the CLI. For the commands needed take a look at **[Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)** | Section 7.1
+
+If the registration broadcast was successfull you will be able to vote for your node in the **[Tracker](https://tracker.apexnetwork.io)**
