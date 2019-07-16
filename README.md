@@ -120,5 +120,5 @@ The registration can be done with the CLI. For the commands needed take a look a
 
 If the registration broadcast was successfull you will be able to vote for your node in the **[Tracker](https://tracker.apexnetwork.io)**
 
-### 3. Running core and client parallel
+### 4. Running core and client parallel
 In order to run multiple applications or keep one application running after exiting the SSH session you need a program that enables you to have multiple terminal instances on your machine. Screen is a good starting point:  **[Screen Tutorial](https://linuxize.com/post/how-to-use-linux-screen)**
