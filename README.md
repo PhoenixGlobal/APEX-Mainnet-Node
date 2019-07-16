@@ -87,7 +87,6 @@ sh run.sh
 ```console
 sh client.sh
 ```
-**For client command documentation take a look at [Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)**
 
 #### 8. Enable the firewall
 ```console
@@ -95,6 +94,10 @@ sudo sh firewall.sh
 ```
 
 # Relevant Information
+
+**For client command documentation take a look at [Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)**
+
+
 If you did generate your miner key over the tracker you will need to convert it from WIF-Format to RAW
 * WIF looks like that:
 > KxP3w2eTciGTGhNj4FtHvaKD1TVUS4P2pSTLrQx2BLTkzjekFKkp
@@ -108,3 +111,5 @@ After you started the client enter this command for conversion:
 ```console
 chain key -input "your-priv-key"
 ```
+
+
