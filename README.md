@@ -43,6 +43,13 @@ sudo sh install.sh
 ```
 
 ### 6. Configure your settings for the Mainnet
+
+**Run the script**
+```console
+sh configure.sh -h "your-public-ip" -k "your-producer-key" -t "timestamp" 
+-a "peer-ip-1" -b "peer-ip-2" -c "peer-ip-3" -n "your-node-name"
+```
+
 #### You must provide the following parameters for a successfull setup
 * -h Your public server IP 
 ```console
@@ -72,11 +79,7 @@ sudo sh install.sh
 ```console
 -n MyFancyNode
 ```
-**Run the script**
-```console
-sh configure.sh -h "your-public-ip" -k "your-producer-key" -t "timestamp" 
--a "peer-ip-1" -b "peer-ip-2" -c "peer-ip-3" -n "your-node-name"
-```
+
 **Using the example values above it would be**
 ```console
 sh configure.sh -h 81.92.144.2 -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86 
