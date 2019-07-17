@@ -88,25 +88,25 @@ sh configure.sh -h "your-public-ip" -k "your-producer-key" -t "timestamp"
 ```
 
 #### You must provide the following parameters for a successfull setup
-* -h Your public server IP 
+* Your public server IP 
 > -h 81.92.144.2
 
-* -k Your miner private key in RAW Format
+* Your miner private key in RAW Format
 > -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86
 
-* -t The timestamp for the genesis block
+* The timestamp for the genesis block
 > -t 2019-05-18T09:05:00Z
 
-* -a IP of your first peer node to connect to
+* IP of your first peer node to connect to
 > -a 71.111.91.7
 
-* -b IP of your second peer node to connect to
+* IP of your second peer node to connect to
 > -b 72.121.61.1
 
-* -c IP of your third peer node to connect to
+* IP of your third peer node to connect to
 > -c 66.92.41.11
 
-* -n The name of your node
+* The name of your node
 > -n MyFancyNode
 
 **Using the example values above it would be**
