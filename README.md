@@ -25,7 +25,7 @@ chain key -input "your-priv-key"
 ### 3. Register your producer node
 After you are in sync with the chain you can start with block production. Therefore you must register your node in the network.
 
-The registration can be done with the CLI. For the commands needed take a look at **[Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)** | Section 7.1
+The registration can be done with the client application. For the commands needed take a look at **[Client Docs](https://github.com/APEX-Network/APEX-Blockchain-CLI/blob/dev/CLI%20commands.md)** | Section 7.1
 
 If the registration broadcast was successfull you will be able to vote for your node in the **[Tracker](https://tracker.apexnetwork.io)**
 
