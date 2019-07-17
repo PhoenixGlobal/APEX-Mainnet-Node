@@ -124,11 +124,13 @@ sh configure.sh -h 81.92.144.2 -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e
 ```
 
 ### 7. Run the core (Supernode)
+**It makes sense to run this command in an own screen session. Make sure you are familiar with screen and have it installed on your machine.** **[Screen Tutorial](https://linuxize.com/post/how-to-use-linux-screen)**
 ```console
 sh run.sh
 ```
 
 ### 8. Run the client (Wallet)
+**It makes sense to run this command in an own screen session. Make sure you are familiar with screen and have it installed on your machine** **[Screen Tutorial](https://linuxize.com/post/how-to-use-linux-screen)**
 ```console
 sh client.sh
 ```
