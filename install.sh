@@ -26,7 +26,7 @@ cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.2.jar apex-blockchai
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
 cd APEX-Blockchain-CLI
-git checkout dev
+git checkout master
 git pull
 mkdir libs
 cd ..
