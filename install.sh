@@ -22,7 +22,7 @@ git pull
 echo "Build Core"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
-cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.1.jar apex-blockchain-core.jar
+cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.2.jar apex-blockchain-core.jar
 mkdir test_net
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
