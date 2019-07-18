@@ -51,6 +51,7 @@ then
    helpFunction
 fi
 
+mkdir blockchain
 cp generator-settings.conf settings.conf
 sed -i 's/ProducerKey/'$privKey'/g' settings.conf
 sed -i 's/TimeStamp/'$timeStamp'/g' settings.conf
