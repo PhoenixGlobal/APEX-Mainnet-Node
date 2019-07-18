@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Add java repo"
 sudo apt install software-properties-common -y
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
