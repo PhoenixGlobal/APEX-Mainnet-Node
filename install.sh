@@ -30,12 +30,12 @@ git checkout master
 git pull
 mkdir libs
 cd ..
-cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.1.jar
+cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.2.jar
 cd APEX-Blockchain-CLI
 echo "Build Client"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
-cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.1.jar apex-blockchain-cli.jar
+cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.2.jar apex-blockchain-cli.jar
 echo ""
 echo "Installed APEX-Core and APEX-Cli successfully"
 echo ""
