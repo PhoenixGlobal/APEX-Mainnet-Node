@@ -77,7 +77,7 @@ sh configure.sh -h "your-host-ip" -k "your-producer-key" -t "timestamp" -a "peer
 #### You must provide the following parameters for a successfull setup
 
 * Your own public static IP
-> -t 142.101.15.14
+> -h 142.101.15.14
 
 * Your miner private key in RAW Format
 > -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86
