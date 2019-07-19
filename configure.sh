@@ -3,7 +3,8 @@
 helpFunction()
 {
    echo ""
-   echo "Usage: $0 -k <your-private-key> -t <timestamp> -a <PeerIP1> -b <PeerIP2> -n <NodeName>"
+   echo "Usage: $0 -h <your-private-key> -k <your-private-key> -t <timestamp> -a <PeerIP1> -b <PeerIP2> -n <NodeName>"
+   echo -h "\tYour own public static IP"
    echo -k "\tYour miner private key in RAW format"
    echo -t "\tThe timestamp of the genesis block"
    echo -a "IP of your first peer"
@@ -13,9 +14,10 @@ helpFunction()
    exit 1
 }
 
-while getopts "k:t:a:b:n:" opt
+while getopts "h:k:t:a:b:n:" opt
 do
    case "$opt" in
+      h ) host="$OPTARG" ;;
       k ) privKey="$OPTARG" ;;
       t ) timeStamp="$OPTARG" ;;
       a ) peer1="$OPTARG" ;;
@@ -25,6 +27,11 @@ do
    esac
 done
 
+if [ -z "$host" ]
+then
+   echo "You have to pass your public static IP";
+   helpFunction
+fi
 if [ -z "$privKey" ]
 then
    echo "You have to pass your private key in uncompressed Format";
@@ -53,6 +60,7 @@ fi
 
 mkdir blockchain
 cp generator-settings.conf settings.conf
+sed -i 's/HostIp/'$host'/g' settings.conf
 sed -i 's/ProducerKey/'$privKey'/g' settings.conf
 sed -i 's/TimeStamp/'$timeStamp'/g' settings.conf
 sed -i 's/YourNodeName/'$name'/g' settings.conf
