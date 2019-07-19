@@ -36,6 +36,7 @@ echo "Build Client"
 cd ..
 cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.2.jar apex-blockchain-cli.jar
 sudo chown -R $USER ~/APEX-Mainnet-Node
+sudo chmod -R a+rw ~/APEX-Mainnet-Node
 echo ""
 echo "Installed APEX-Core and APEX-Cli successfully"
 echo ""
