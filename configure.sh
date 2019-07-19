@@ -3,7 +3,7 @@
 helpFunction()
 {
    echo ""
-   echo "Usage: $0 -h <your-private-key> -k <your-private-key> -t <timestamp> -a <PeerIP1> -b <PeerIP2> -n <NodeName>"
+   echo "Usage: $0 -h <your-host-ip> -k <your-private-key> -t <timestamp> -a <PeerIP1> -b <PeerIP2> -n <NodeName>"
    echo -h "\tYour own public static IP"
    echo -k "\tYour miner private key in RAW format"
    echo -t "\tThe timestamp of the genesis block"
