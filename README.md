@@ -59,19 +59,7 @@ cd APEX-Mainnet-Node
 
 ### 4. Make all provided scripts executable
 ```console
-chmod +x install.sh
-```
-```console
-chmod +x configure.sh
-```
-```console
-chmod +x run.sh
-```
-```console
-chmod +x client.sh
-```
-```console
-chmod +x firewall.sh
+chmod +x install.sh && chmod +x configure.sh && chmod +x run.sh && chmod +x client.sh && chmod +x firewall.sh
 ```
 
 ### 5. Then install the core and the client application
