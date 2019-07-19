@@ -14,7 +14,7 @@ sudo rm -r ~/gradle
 unzip -d ~/gradle gradle-4.10.2-bin.zip
 sudo rm gradle-4.10.2-bin.zip
 echo "Clone APEX Core"
-git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
+git clone https://github.com/yuomii/APEX-Blockchain-Core.git
 cd APEX-Blockchain-Core
 git checkout master
 git pull
