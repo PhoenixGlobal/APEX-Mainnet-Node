@@ -93,8 +93,7 @@ sh configure.sh -k "your-producer-key" -t "timestamp" -a "peer-ip-1" -b "peer-ip
 
 **Using the example values above it would be**
 ```console
-sh configure.sh -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86 
--t 2019-05-18T09:05:00Z -a 71.111.91.7 -b 72.121.61.1 -n MyFancyNode
+sh configure.sh -k 7a93d447bffe6d89e690f529a3a0bdff8ff6169172458e04849ef1d4eafd7f86 -t 2019-05-18T09:05:00Z -a 71.111.91.7 -b 72.121.61.1 -n MyFancyNode
 ```
 
 ### 7. Run the core (Supernode)
