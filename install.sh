@@ -34,7 +34,7 @@ cd APEX-Blockchain-CLI
 echo "Build Client"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
-cp APEX-Blockchain-CLIsudo chown -R $USER ~/APEX-Mainnet-Node/build/libs/APEX-Blockchain-CLI-0.9.2.jar apex-blockchain-cli.jar
+cp APEX-Blockchain-CLI/build/libs/APEX-Blockchain-CLI-0.9.2.jar apex-blockchain-cli.jar
 sudo chown -R $USER ~/APEX-Mainnet-Node
 echo ""
 echo "Installed APEX-Core and APEX-Cli successfully"
