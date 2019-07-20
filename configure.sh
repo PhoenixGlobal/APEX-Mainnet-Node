@@ -66,3 +66,5 @@ sed -i 's/TimeStamp/'$timeStamp'/g' settings.conf
 sed -i 's/YourNodeName/'$name'/g' settings.conf
 sed -i 's/Peer1/'$peer1'/g' settings.conf
 sed -i 's/Peer2/'$peer2'/g' settings.conf
+echo ""
+echo "Generated the settings.conf successfully"
