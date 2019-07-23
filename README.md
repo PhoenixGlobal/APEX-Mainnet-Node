@@ -113,5 +113,5 @@ sh client.sh
 
 ### 9. Enable the firewall
 ```console
-sudo sh firewall.sh
+sudo sh firewall.sh -p <your-ssh-port>
 ```
