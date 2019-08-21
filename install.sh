@@ -14,10 +14,9 @@ sudo rm -r ~/gradle
 unzip -d ~/gradle gradle-4.10.2-bin.zip
 sudo rm gradle-4.10.2-bin.zip
 echo "Clone APEX Core"
-git clone https://github.com/yuomii/APEX-Blockchain-Core.git
+git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
 cd APEX-Blockchain-Core
 git checkout master
-git pull
 echo "Build Core"
 ~/gradle/gradle-4.10.2/bin/gradle shadowJar
 cd ..
@@ -25,8 +24,7 @@ cp APEX-Blockchain-Core/build/libs/APEX-Blockchain-Core-0.9.2.jar apex-blockchai
 echo "Clone APEX Client"
 git clone https://github.com/APEX-Network/APEX-Blockchain-CLI.git
 cd APEX-Blockchain-CLI
-git checkout v0.9.2
-git pull
+git checkout master
 mkdir libs
 cd ..
 cp apex-blockchain-core.jar APEX-Blockchain-CLI/libs/APEX-Blockchain-Core-0.9.2.jar
